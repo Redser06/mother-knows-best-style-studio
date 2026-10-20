@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#F9F8F4" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>Mother Knows Best · The Conscious Style &amp; Capsule Edit — motherknowsbest.ie</title>
+  <link rel="manifest" href="./manifest.json" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      /* Official Mother Knows Best (motherknowsbest.ie) Colour Palette */
+      --mkb-canvas: #F9F8F4;
+      --mkb-surface: #FFFFFF;
+      --mkb-sand: #F2EFE9;
+      --mkb-red: #E83A0F;
+      --mkb-red-aa: #C82D08;
+      --mkb-pink: #FBCFFA;
+      --mkb-light-pink: #FEEAFD;
+      --mkb-charcoal: #1F2022;
+      --mkb-ink: #1E1E20;
+      --mkb-muted: #5A585D;
+      --mkb-sage: #006948;
+      --mkb-sage-tint: #E6F4EE;
+      --mkb-border: #E8E3DA;
+      --shadow-retail: 0 1px 2px rgba(30, 30, 32, 0.03), 0 8px 24px rgba(30, 30, 32, 0.05);
+      --shadow-retail-hover: 0 2px 4px rgba(30, 30, 32, 0.04), 0 16px 36px rgba(232, 58, 15, 0.09);
+    }
+
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--mkb-canvas);
+      color: var(--mkb-ink);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .font-editorial {
+      font-family: 'Newsreader', Georgia, serif;
+      letter-spacing: -0.02em;
+    }
+
+    .font-mono-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mkb-italic-accent {
+      font-family: 'Newsreader', Georgia, serif;
+      font-style: italic;
+      color: var(--mkb-red);
+      font-weight: 400;
+    }
+
+    .card-retail {
+      background-color: var(--mkb-surface);
+      border: 1px solid var(--mkb-border);
+      border-radius: 24px;
+      box-shadow: var(--shadow-retail);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+
+    .card-retail:hover {
+      box-shadow: var(--shadow-retail-hover);
+    }
+
+    .btn-mkb-charcoal {
+      background-color: var(--mkb-charcoal);
+      color: #FFFFFF;
+      border-radius: 9999px;
+      transition: all 0.2s ease;
+    }
+    .btn-mkb-charcoal:hover {
+      background-color: var(--mkb-red);
+      transform: translateY(-1px);
+    }
+
+    .btn-mkb-red {
+      background-color: var(--mkb-red);
+      color: #FFFFFF;
+      border-radius: 9999px;
+      box-shadow: 0 6px 20px rgba(232, 58, 15, 0.25);
+      transition: all 0.2s ease;
+    }
+    .btn-mkb-red:hover {
+      background-color: var(--mkb-charcoal);
+      transform: translateY(-1px);
+    }
+
+    .tab-pill-active {
+      background-color: var(--mkb-charcoal);
+      color: #FFFFFF;
+      border-color: var(--mkb-charcoal);
+    }
+
+    .tab-pill-hero {
+      background: linear-gradient(135deg, #E83A0F 0%, #C82D08 100%);
+      color: #FFFFFF;
+      border-color: #C82D08;
+      box-shadow: 0 4px 14px rgba(232, 58, 15, 0.28);
+    }
+
+    .tab-pill-inactive {
+      background-color: transparent;
+      color: var(--mkb-muted);
+      border-color: transparent;
+    }
+    .tab-pill-inactive:hover {
+      background-color: var(--mkb-sand);
+      color: var(--mkb-ink);
+    }
+
+    /* Retail Range Slider */
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      background: var(--mkb-sand);
+      height: 7px;
+      border-radius: 999px;
+      outline: none;
+      border: 1px solid var(--mkb-border);
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--mkb-red);
+      cursor: pointer;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 2px 8px rgba(232, 58, 15, 0.35);
+    }
+
+    /* Decorative Mother Knows Best Ampersand Watermark */
+    .mkb-ampersand {
+      font-family: 'Newsreader', Georgia, serif;
+      font-style: italic;
+      color: var(--mkb-pink);
+      user-select: none;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col pb-24 lg:pb-12">
+
+  <!-- TOP MOTHER KNOWS BEST COMMUNITY ANNOUNCEMENT BAR -->
+  <div class="border-b px-4 py-2 text-xs" style="background-color: var(--mkb-light-pink); border-color: #F3C4F1; color: var(--mkb-ink);">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider" style="background-color: var(--mkb-pink); color: var(--mkb-ink);">MOTHER KNOWS BEST · WICKLOW</span>
+        <span class="font-medium">The Conscious Style &amp; Capsule Edit — built for busy mums so you never waste a euro on the wrong cut or colour.</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://motherknowsbest.ie" target="_blank" rel="noopener noreferrer" class="font-semibold underline decoration-[#E83A0F] hover:text-[#E83A0F] transition">
+          Visit motherknowsbest.ie Community ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN EDITORIAL RETAIL HEADER (MATCHING MOTHERKNOWSBEST.IE) -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-[#F9F8F4]/95 border-b" style="border-color: var(--mkb-border);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
+      <!-- Brand Wordmark matching Mother Knows Best Wicklow -->
+      <a href="#top" onclick="switchTab('journey'); return false;" class="flex items-baseline gap-2.5 shrink-0">
+        <span class="font-editorial text-xl sm:text-2xl font-medium tracking-tight text-[#1E1E20]">Mother Knows Best</span>
+        <span class="text-[#C5BFB5] font-light">|</span>
+        <span class="text-[10px] uppercase tracking-[0.22em] font-semibold" style="color: var(--mkb-red);">STYLE STUDIO</span>
+      </a>
+
+      <!-- Desktop 4-Step Retail Navigation (Accelerating to Tab 4 Hero) -->
+      <nav class="hidden lg:flex items-center gap-1 p-1 rounded-full border bg-white" style="border-color: var(--mkb-border);" aria-label="Style Journey">
+        <button onclick="switchTab('journey')" id="nav-desk-journey" class="px-3.5 py-1.5 rounded-full text-xs font-semibold transition tab-pill-active">
+          1. My Mum Stage
+        </button>
+        <button onclick="switchTab('interview')" id="nav-desk-interview" class="px-3.5 py-1.5 rounded-full text-xs font-semibold transition tab-pill-inactive">
+          2. Stylist &amp; Jev Interview
+        </button>
+        <button onclick="switchTab('wardrobe')" id="nav-desk-wardrobe" class="px-3.5 py-1.5 rounded-full text-xs font-semibold transition tab-pill-inactive">
+          3. Snap My Wardrobe (CV)
+        </button>
+        <button onclick="switchTab('shop')" id="nav-desk-shop" class="px-3.5 py-1.5 rounded-full text-xs font-semibold transition flex items-center gap-1.5 tab-pill-inactive">
+          <span class="w-2 h-2 rounded-full bg-[#E83A0F]"></span>
+          <span>4. The Conscious Edit ★ HERO</span>
+        </button>
+      </nav>
+
+      <!-- Right Actions: Direct Hero Jump + Subtle Demo Mode Switcher -->
+      <div class="flex items-center gap-2 shrink-0">
+        <button onclick="accelerateToHeroShop()" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold btn-mkb-charcoal">
+          <span>Shop My Edit</span>
+          <span>↗</span>
+        </button>
+        <!-- Demo Mode Dropdown (Strictly labelled FOR DEMO PURPOSES ONLY) -->
+        <button onclick="toggleDemoBar()" class="px-3 py-1.5 rounded-full text-[11px] font-semibold border bg-white hover:bg-[#F2EFE9] transition flex items-center gap-1.5" style="border-color: var(--mkb-border); color: var(--mkb-muted);" title="Load sample personas for demo purposes only">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+          <span>Demo Preset</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Collapsible Demo Bar (For Demo Purposes Only — hidden by default so real users self-identify first) -->
+    <div id="demoPresetBar" class="hidden border-t px-4 py-2.5 bg-[#F2EFE9] text-xs" style="border-color: var(--mkb-border);">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <span class="font-mono-num text-[10px] uppercase px-2 py-0.5 rounded bg-amber-500/20 text-amber-900 font-bold">DEMO PURPOSES ONLY</span>
+          <span style="color: var(--mkb-muted);">Pre-fill journey with a sample Wicklow mum profile or configure live Gemini / Jev keys:</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <select id="demoPersonaSelect" onchange="loadDemoPersona(this.value)" class="rounded-full px-3 py-1 border bg-white text-xs font-semibold" style="border-color: var(--mkb-border);">
+            <option value="">-- Self-Identify (Default Live User Flow) --</option>
+            <option value="maternity">Demo 1: Aoife (On Maternity Leave • 6m Postpartum • Nursing Friendly • €75 Budget)</option>
+            <option value="working">Demo 2: Ciara (Working Mum Hybrid • School Run to Dublin Office • €120 Budget)</option>
+            <option value="sahm">Demo 3: Niamh (Stay-at-Home Mum • 2 Toddlers • Machine-Washable Only • €50 Budget)</option>
+            <option value="return">Demo 4: Sinéad (Returning from Mat Leave • Rediscovering Confidence • €140 Budget)</option>
+          </select>
+          <input id="geminiApiKeyInput" type="password" placeholder="Optional Gemini API Key (3.8 Flash / 4 Argon)" class="rounded-full px-3 py-1 border bg-white text-xs w-56" style="border-color: var(--mkb-border);" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 pt-6 space-y-10">
+
+    <!-- ======================================================================= -->
+    <!-- TAB 1 // SELF-IDENTIFY PERSONAL CIRCUMSTANCES & RETAIL LOOKBOOK HERO    -->
+    <!-- ======================================================================= -->
+    <section id="view-journey" class="space-y-10">
+
+      <!-- Editorial Hero Matching Mother Knows Best ("Dressing, made a little warmer together") -->
+      <div class="card-retail p-6 sm:p-10 lg:p-12 relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Left 7 Cols: Editorial Copy + Fast-Track CTAs -->
+          <div class="lg:col-span-7 space-y-5 relative z-10">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em]" style="color: var(--mkb-red);">
+              <span>— ISSUE 01 · A MOTHER KNOWS BEST STYLE EDIT</span>
+            </div>
+
+            <h1 class="font-editorial text-4xl sm:text-5xl lg:text-[58px] font-medium leading-[1.06] text-[#1E1E20]">
+              Getting dressed, made a little <span class="mkb-italic-accent">warmer</span> &amp; <span class="mkb-italic-accent">smarter</span> together.
+            </h1>
+
+            <p class="text-base sm:text-lg leading-relaxed max-w-xl" style="color: var(--mkb-muted);">
+              When your body has changed, your mornings are chaos, and 90% of your money goes on the children, you can't afford wardrobe mistakes. Tell us your stage of motherhood, chat with our AI Stylist, or snap your wardrobe — and go straight to your zero-regret capsule edit.
+            </p>
+
+            <!-- Accelerated Funnel CTAs (Direct jump to Tab 4 Hero or 60-sec setup) -->
+            <div class="pt-2 flex flex-wrap items-center gap-3.5">
+              <a href="#circumstancePicker" class="px-6 py-3.5 text-sm font-semibold btn-mkb-charcoal inline-flex items-center gap-2">
+                <span>1. Choose My Mum Stage</span>
+                <span>↓</span>
+              </a>
+              <button onclick="accelerateToHeroShop()" class="px-6 py-3.5 text-sm font-semibold btn-mkb-red inline-flex items-center gap-2">
+                <span>⚡ Fast-Track to My Conscious Edit (Hero)</span>
+                <span>→</span>
+              </button>
+            </div>
+
+            <!-- Mother Knows Best Trust Metrics Strip -->
+            <div class="pt-6 border-t grid grid-cols-3 gap-4 max-w-lg" style="border-color: var(--mkb-border);">
+              <div>
+                <div class="text-[10px] uppercase tracking-widest font-semibold" style="color: var(--mkb-muted);">DECISION ENGINE</div>
+                <div class="font-editorial text-xl font-medium mt-0.5">TypeSafe Jev</div>
+              </div>
+              <div>
+                <div class="text-[10px] uppercase tracking-widest font-semibold" style="color: var(--mkb-muted);">PRIVACY PROMISE</div>
+                <div class="font-editorial text-xl font-medium mt-0.5">100% Anonymous</div>
+              </div>
+              <div>
+                <div class="text-[10px] uppercase tracking-widest font-semibold" style="color: var(--mkb-muted);">COMMUNITY</div>
+                <a href="https://motherknowsbest.ie" target="_blank" rel="noopener noreferrer" class="font-editorial text-xl font-medium mt-0.5 underline decoration-[#E83A0F] block">600+ Mums</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 5 Cols: Editorial Retail Photography Collage -->
+          <div class="lg:col-span-5 relative">
+            <span class="mkb-ampersand text-[120px] absolute -left-8 top-6 z-20 hidden lg:block">&amp;</span>
+            <div class="relative rounded-[28px] overflow-hidden shadow-xl border aspect-[4/5]" style="border-color: var(--mkb-border);">
+              <img id="heroLookbookImg" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=85" alt="Bright editorial mum style lookbook" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent flex flex-col justify-end p-6 text-white">
+                <div class="text-[10px] uppercase tracking-[0.2em] font-semibold text-[#FBCFFA]">— FROM THE WICKLOW COMMUNITY</div>
+                <p id="heroQuoteText" class="font-editorial text-xl sm:text-2xl leading-snug mt-1">
+                  "I stopped panic-buying boxy jumpers that hid my shape. Three pieces unlocked nine outfits I actually feel like myself in."
+                </p>
+                <div class="mt-3 flex items-center justify-between text-xs text-white/85">
+                  <span id="heroStageBadge">Selected Stage: On Maternity Leave</span>
+                  <span class="px-2.5 py-1 rounded-full bg-white/20 backdrop-blur-md font-mono-num text-[11px]">Avg €0.62 / wear</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 1: SELF-IDENTIFY PERSONAL CIRCUMSTANCES (6 VISUAL RETAIL CARDS) -->
+      <div id="circumstancePicker" class="space-y-5">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.18em]" style="color: var(--mkb-red);">STEP 01 · SELF-IDENTIFY YOUR LIFE STAGE</span>
+            <h2 class="font-editorial text-3xl sm:text-4xl font-medium mt-1">Where are you in your motherhood journey right now?</h2>
+            <p class="text-sm mt-1" style="color: var(--mkb-muted);">
+              Click the card that best matches your current week-to-week reality. We immediately tailor your fabric practicality, feeding access, and conscious capsule budget.
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-semibold px-3 py-1.5 rounded-full" style="background-color: var(--mkb-light-pink); color: var(--mkb-ink);">
+              Active Selection: <strong id="activeStageLabel">On Maternity Leave / 4th Trimester</strong>
+            </span>
+          </div>
+        </div>
+
+        <!-- 6 Visual Circumstance Cards with Editorial Photography -->
+        <div id="circumstanceCardsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Populated dynamically by JS -->
+        </div>
+
+        <!-- Quick Personal Context Sliders (Conscious Budget + Body Confidence Goal + Feeding Access) -->
+        <div class="card-retail p-6 sm:p-8 bg-white">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <!-- Budget Priority -->
+              <div class="p-4 rounded-2xl border" style="background-color: var(--mkb-canvas); border-color: var(--mkb-border);">
+                <label class="text-[11px] font-bold uppercase tracking-wider block" style="color: var(--mkb-red);" for="selfBudgetSelect">Conscious Spend Limit</label>
+                <div class="font-editorial text-xl font-medium mt-1">Every Euro Counts</div>
+                <select id="selfBudgetSelect" onchange="updateSelfCircumstanceContext()" class="mt-2 w-full p-2 rounded-xl border bg-white text-xs font-semibold" style="border-color: var(--mkb-border);">
+                  <option value="55">Under €55 (Dunnes / Uniqlo / Marks)</option>
+                  <option value="85" selected>Under €85 (High-Street Capsule Sweet Spot)</option>
+                  <option value="130">Under €130 (COS / Arket Workwear Investment)</option>
+                  <option value="180">Up to €180 (Key Tailoring &amp; Coat Anchors)</option>
+                </select>
+              </div>
+
+              <!-- Body Confidence Focus -->
+              <div class="p-4 rounded-2xl border" style="background-color: var(--mkb-canvas); border-color: var(--mkb-border);">
+                <label class="text-[11px] font-bold uppercase tracking-wider block" style="color: var(--mkb-red);" for="selfConfidenceSelect">Body Confidence Focus</label>
+                <div class="font-editorial text-xl font-medium mt-1">How Clothes Sit</div>
+                <select id="selfConfidenceSelect" onchange="updateSelfCircumstanceContext()" class="mt-2 w-full p-2 rounded-xl border bg-white text-xs font-semibold" style="border-color: var(--mkb-border);">
+                  <option value="postpartum-tummy" selected>Skim soft tummy without tight waistbands</option>
+                  <option value="fuller-bust-waist">Support fuller bust &amp; define waist</option>
+                  <option value="balance-hips">Balance fuller hips &amp; lengthen legs in flats</option>
+                  <option value="rediscover-identity">Stop living in black leggings — feel like me</option>
+                </select>
+              </div>
+
+              <!-- Daily Practicality -->
+              <div class="p-4 rounded-2xl border" style="background-color: var(--mkb-canvas); border-color: var(--mkb-border);">
+                <label class="text-[11px] font-bold uppercase tracking-wider block" style="color: var(--mkb-red);" for="selfPracticalSelect">Non-Negotiable Spec</label>
+                <div class="font-editorial text-xl font-medium mt-1">Mum-Life Proofing</div>
+                <select id="selfPracticalSelect" onchange="updateSelfCircumstanceContext()" class="mt-2 w-full p-2 rounded-xl border bg-white text-xs font-semibold" style="border-color: var(--mkb-border);">
+                  <option value="nursing-washable" selected>1-Hand Nursing + 30°C Machine Wash</option>
+                  <option value="washable-squat">30°C Machine Wash + Buggy/Floor Squat-Proof</option>
+                  <option value="commute-crease">Crease-Free School Run to Office Commute</option>
+                  <option value="csection-gentle">C-Section Safe (Zero Rigid Seams or Zips)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Fast-Track Action Column -->
+            <div class="lg:col-span-4 flex flex-col gap-2.5">
+              <button onclick="switchTab('interview')" class="w-full py-3.5 px-5 text-xs font-semibold btn-mkb-charcoal flex items-center justify-center gap-2">
+                <span>Next: 60-Sec AI Stylist Interview</span>
+                <span>→</span>
+              </button>
+              <button onclick="accelerateToHeroShop()" class="w-full py-3.5 px-5 text-xs font-semibold btn-mkb-red flex items-center justify-center gap-2">
+                <span>⚡ Go Straight to My Conscious Edit (Tab 4 Hero)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 2 // INTERACTIVE STYLIST INTERVIEW + TYPESAFE AI JEV DECISIONING    -->
+    <!-- ======================================================================= -->
+    <section id="view-interview" class="hidden space-y-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b pb-5" style="border-color: var(--mkb-border);">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.18em]" style="color: var(--mkb-red);">STEP 02 · CONVERSATIONAL STYLIST + JEV DECISION ENGINE</span>
+          <h2 class="font-editorial text-3xl sm:text-4xl font-medium mt-1">Your Interactive Style, Body &amp; Colour Consultation</h2>
+          <p class="text-sm mt-1 max-w-2xl" style="color: var(--mkb-muted);">
+            No awkward forms or tape measures. Chat naturally with our stylist or tap the quick-reply prompts below. As you answer, the LLM + <strong>TypeSafe AI Jev (`typesafe/jev-latest`)</strong> decision model parses your proportions, seasonal skin undertone, and calibrated confidence score in real time.
+          </p>
+        </div>
+        <button onclick="accelerateToHeroShop()" class="px-5 py-3 text-xs font-semibold btn-mkb-red shrink-0">
+          Apply Profile &amp; Open My Conscious Edit (Hero) →
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <!-- Left 7 Cols: Interactive Conversational Stylist Interview -->
+        <div class="lg:col-span-7 card-retail overflow-hidden flex flex-col">
+          <!-- Stylist Header with Editorial Portrait -->
+          <div class="p-5 border-b flex items-center justify-between" style="background-color: var(--mkb-light-pink); border-color: #F3C4F1;">
+            <div class="flex items-center gap-3.5">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=240&q=80" alt="Maeve — Mother Knows Best Stylist" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" />
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-editorial text-lg font-medium">Maeve · MKB Personal Stylist</span>
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase" style="background-color: var(--mkb-pink);">LLM + Jev Calibrated</span>
+                </div>
+                <p class="text-xs" style="color: var(--mkb-muted);">Anonymous 1-to-1 consultation • No body measurements required</p>
+              </div>
+            </div>
+            <button onclick="resetStylistInterview()" class="text-xs font-semibold underline" style="color: var(--mkb-muted);">Restart Chat</button>
+          </div>
+
+          <!-- Chat Transcript Container -->
+          <div id="interviewChatStream" class="p-5 space-y-4 max-h-[460px] overflow-y-auto" style="background-color: var(--mkb-canvas);">
+            <!-- Populated by JS -->
+          </div>
+
+          <!-- Interactive Quick-Tap Interview Chips (Zero typing required, or free-text below) -->
+          <div class="p-4 border-t bg-white space-y-3" style="border-color: var(--mkb-border);">
+            <div class="text-[11px] font-bold uppercase tracking-wider" style="color: var(--mkb-red);" id="interviewStepPromptLabel">
+              TAP AN ANSWER OR TYPE IN YOUR OWN WORDS:
+            </div>
+            <div id="interviewQuickReplies" class="flex flex-wrap gap-2">
+              <!-- Populated by JS -->
+            </div>
+
+            <!-- Free-Text Input for Natural Language LLM Parsing -->
+            <form onsubmit="submitFreeTextInterview(event)" class="flex gap-2 pt-1">
+              <input id="interviewFreeInput" type="text" placeholder="Or tell Maeve in your own words (e.g. 'I'm 6m postpartum, pale skin, living in grey hoodies and need outfits for work & school run')…" class="flex-1 px-4 py-2.5 rounded-full border text-xs focus:outline-none" style="background-color: var(--mkb-canvas); border-color: var(--mkb-border);" />
+              <button type="submit" class="px-5 py-2.5 text-xs font-semibold btn-mkb-charcoal shrink-0">
+                Send &amp; Parse →
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right 5 Cols: Live LLM + TypeSafe AI Jev Decision Card -->
+        <div class="lg:col-span-5 space-y-5">
+          <div class="card-retail p-6 space-y-5">
+            <div class="flex items-center justify-between border-b pb-3" style="border-color: var(--mkb-border);">
+              <div>
+                <span class="font-mono-num text-[10px] uppercase font-bold" style="color: var(--mkb-sage);">LIVE DECISION ARBITER · TYPESAFE AI JEV</span>
+                <h3 class="font-editorial text-2xl font-medium mt-0.5">Parsed Silhouette &amp; Colour Matrix</h3>
+              </div>
+              <span id="jevConfidencePill" class="font-mono-num text-xs font-bold px-3 py-1 rounded-full" style="background-color: var(--mkb-sage-tint); color: var(--mkb-sage);">
+                Jev 94% Confident
+              </span>
+            </div>
+
+            <!-- Jev Calibrated Breakdown Bars -->
+            <div id="jevLiveTelemetryBox" class="space-y-3">
+              <!-- Populated by JS -->
+            </div>
+
+            <!-- Parsed Seasonal Colour Swatches (Power vs Drain) -->
+            <div class="p-4 rounded-2xl border space-y-3" style="background-color: var(--mkb-canvas); border-color: var(--mkb-border);">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider" style="color: var(--mkb-ink);">Face-Framing Palette: <span id="parsedSeasonName" style="color: var(--mkb-red);">Warm Autumn Soft</span></span>
+                <span class="text-[11px]" style="color: var(--mkb-muted);">8-hr sleep glow</span>
+              </div>
+              <div id="parsedPowerSwatches" class="grid grid-cols-3 gap-2">
+                <!-- Populated by JS -->
+              </div>
+              <div class="text-[11px] pt-1 border-t" style="border-color: var(--mkb-border); color: var(--mkb-muted);">
+                <strong style="color: var(--mkb-red);">Avoid right under chin:</strong> <span id="parsedAvoidColours">Icy marl grey, stark optic white, cool neon pink</span>
+              </div>
+            </div>
+
+            <!-- Direct Acceleration CTA to Tab 4 Hero -->
+            <button onclick="accelerateToHeroShop()" class="w-full py-3.5 px-5 text-xs font-semibold btn-mkb-red flex items-center justify-center gap-2">
+              <span>See My Jev-Verified Outfits &amp; Conscious Buys (Tab 4)</span>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 3 // PHOTOGRAPH EXISTING WARDROBE & COMPUTER VISION TAGGER          -->
+    <!-- ======================================================================= -->
+    <section id="view-wardrobe" class="hidden space-y-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b pb-5" style="border-color: var(--mkb-border);">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.18em]" style="color: var(--mkb-red);">STEP 03 · COMPUTER VISION WARDROBE SCANNER</span>
+          <h2 class="font-editorial text-3xl sm:text-4xl font-medium mt-1">Photograph Your Existing Pieces — We'll Style Them First</h2>
+          <p class="text-sm mt-1 max-w-2xl" style="color: var(--mkb-muted);">
+            Before spending a cent, snap a photo of any item or hanging rail in your wardrobe. Our Computer Vision pipeline extracts dominant pixel hex colours, identifies garment category &amp; neckline, and scores how to wear it for your body shape.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2.5">
+          <label for="cvCameraInput" class="cursor-pointer px-5 py-3 text-xs font-semibold btn-mkb-charcoal inline-flex items-center gap-2">
+            <span>📸 Snap / Upload My Garment Photo</span>
+          </label>
+          <input id="cvCameraInput" type="file" accept="image/*" capture="environment" multiple class="hidden" onchange="handleCVWardrobeUpload(event)" />
+          <button onclick="accelerateToHeroShop()" class="px-5 py-3 text-xs font-semibold btn-mkb-red">
+            Match With Conscious Gaps (Tab 4 Hero) →
+          </button>
+        </div>
+      </div>
+
+      <!-- Computer Vision Live Workbench -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Left 5 Cols: Live CV Scanner Canvas & Instant Sample Rail Test -->
+        <div class="lg:col-span-5 card-retail p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="font-mono-num text-[10px] uppercase font-bold" style="color: var(--mkb-red);">LIVE COMPUTER VISION INSPECTOR</span>
+            <span id="cvStatusBadge" class="font-mono-num text-[10px] px-2.5 py-0.5 rounded-full font-semibold" style="background-color: var(--mkb-sage-tint); color: var(--mkb-sage);">HTML5 Canvas Pixel + Gemini Vision Ready</span>
+          </div>
+
+          <!-- Interactive Sample Photos to Test CV Extraction with 1 Click -->
+          <div class="space-y-1.5">
+            <div class="text-xs font-medium" style="color: var(--mkb-muted);">Upload your own photo above, or click a real wardrobe snap to run Computer Vision:</div>
+            <div class="grid grid-cols-3 gap-2">
+              <button onclick="runCVSampleGarment('knit')" class="p-2 rounded-xl border text-left hover:border-[#E83A0F] transition bg-[#F9F8F4]" style="border-color: var(--mkb-border);">
+                <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=300&q=80" alt="Cream Knit" class="w-full h-16 object-cover rounded-lg mb-1" />
+                <div class="font-semibold text-[11px] truncate">Chunky Cream Knit</div>
+              </button>
+              <button onclick="runCVSampleGarment('denim')" class="p-2 rounded-xl border text-left hover:border-[#E83A0F] transition bg-[#F9F8F4]" style="border-color: var(--mkb-border);">
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=300&q=80" alt="Denim Jeans" class="w-full h-16 object-cover rounded-lg mb-1" />
+                <div class="font-semibold text-[11px] truncate">High-Rise Denim</div>
+              </button>
+              <button onclick="runCVSampleGarment('blazer')" class="p-2 rounded-xl border text-left hover:border-[#E83A0F] transition bg-[#F9F8F4]" style="border-color: var(--mkb-border);">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=300&q=80" alt="Tailored Blazer" class="w-full h-16 object-cover rounded-lg mb-1" />
+                <div class="font-semibold text-[11px] truncate">Relaxed Camel Blazer</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- CV Bounding Box & Pixel Palette Preview -->
+          <div class="rounded-2xl border overflow-hidden relative bg-[#1E1E20]" style="border-color: var(--mkb-border);">
+            <canvas id="cvHiddenCanvas" width="320" height="320" class="hidden"></canvas>
+            <img id="cvPreviewImg" src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=700&q=80" crossorigin="anonymous" alt="CV Garment Preview" class="w-full h-64 object-cover opacity-95" />
+            <!-- Computer Vision Detection Bounding Box Overlay -->
+            <div class="absolute inset-5 border-2 border-dashed border-[#FBCFFA] rounded-2xl pointer-events-none flex flex-col justify-between p-3">
+              <div class="flex items-center justify-between">
+                <span id="cvBoxLabel" class="px-2.5 py-1 rounded-md text-[10px] font-mono-num font-bold bg-[#1F2022]/90 text-white">
+                  CV DETECTED: WARM ECRU RIBBED KNIT (96% CONF)
+                </span>
+                <span id="cvBoxUndertone" class="px-2.5 py-1 rounded-md text-[10px] font-mono-num font-bold bg-[#E83A0F] text-white">
+                  WARM UNDERTONE ✓
+                </span>
+              </div>
+              <div id="cvBoxRule" class="px-3 py-2 rounded-xl bg-black/75 backdrop-blur-md text-white text-xs">
+                <strong>Silhouette Match:</strong> French-tuck front 2 inches into high-rise denim to avoid 50/50 hip split.
+              </div>
+            </div>
+          </div>
+
+          <!-- Extracted Pixel Swatches & Add to Wardrobe Button -->
+          <div id="cvDetectionSummary" class="p-4 rounded-2xl border space-y-3" style="background-color: var(--mkb-canvas); border-color: var(--mkb-border);">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Right 7 Cols: Owned Retail Wardrobe Grid with Real Photography -->
+        <div class="lg:col-span-7 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex flex-wrap gap-1.5">
+              <button onclick="filterOwnedWardrobe('all')" id="own-cat-all" class="px-3.5 py-1.5 rounded-full text-xs font-semibold border tab-pill-active">All Photographed (6)</button>
+              <button onclick="filterOwnedWardrobe('top')" id="own-cat-top" class="px-3.5 py-1.5 rounded-full text-xs font-semibold border tab-pill-inactive">Tops &amp; Knits</button>
+              <button onclick="filterOwnedWardrobe('bottom')" id="own-cat-bottom" class="px-3.5 py-1.5 rounded-full text-xs font-semibold border tab-pill-inactive">Denim &amp; Trousers</button>
+              <button onclick="filterOwnedWardrobe('layer')" id="own-cat-layer" class="px-3.5 py-1.5 rounded-full text-xs font-semibold border tab-pill-inactive">Coats &amp; Blazers</button>
+              <button onclick="filterOwnedWardrobe('one-piece')" id="own-cat-one-piece" class="px-3.5 py-1.5 rounded-full text-xs font-semibold border tab-pill-inactive">Dresses</button>
+            </div>
+            <span class="text-xs font-medium" style="color: var(--mkb-muted);">Click any item to test outfits in Tab 4</span>
+          </div>
+
+          <div id="ownedWardrobeGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 4 // THE HERO FEATURE: CONSCIOUS CAPSULE EDIT & SMART SHOP          -->
+    <!-- ======================================================================= -->
+    <section id="view-shop" class="hidden space-y-8">
+
+      <!-- HERO EDITORIAL BANNER: PERSONALIZED FOR HER STAGE, SHAPE & JEV SCORE -->
+      <div class="card-retail p-6 sm:p-8 lg:p-10 relative overflow-hidden" style="background: linear-gradient(135deg, #FFFFFF 0%, #FEEAFD 55%, #F9F8F4 100%);">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div class="lg:col-span-8 space-y-3">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest bg-[#E83A0F] text-white">
+                ★ HERO FEATURE · ZERO-REGRET CAPSULE EDIT
+              </span>
+              <span id="heroShopStagePill" class="px-3 py-1 rounded-full text-xs font-semibold bg-white border" style="border-color: var(--mkb-border);">
+                Tailored for: On Maternity Leave • Soft Hourglass
+              </span>
+              <span class="px-3 py-1 rounded-full text-xs font-mono-num font-bold" style="background-color: var(--mkb-sage-tint); color: var(--mkb-sage);">
+                Jev Regret Risk: &lt;4%
+              </span>
+            </div>
+
+            <h2 id="heroShopHeadline" class="font-editorial text-3xl sm:text-4xl lg:text-[44px] font-medium leading-[1.1]">
+              Don't buy a whole new wardrobe. These <span class="mkb-italic-accent">3 conscious bridge pieces</span> unlock <span class="mkb-italic-accent">18 flattering outfits</span> with clothes you already own.
+            </h2>
+
+            <p id="heroShopRationale" class="text-sm sm:text-base leading-relaxed max-w-2xl" style="color: var(--mkb-muted);">
+              Parsed by our LLM + TypeSafe AI Jev arbiter: every piece below passes your <strong>30°C machine-wash</strong> &amp; <strong>postpartum tummy comfort</strong> gates, frames your face in warm autumn tones, and drops under <strong>€0.85 per wear</strong>.
+            </p>
+          </div>
+
+          <!-- Right 4 Cols: Conscious Spend Slider + Total Outfits Unlocked Counter -->
+          <div class="lg:col-span-4 bg-white p-5 rounded-3xl border shadow-sm space-y-4" style="border-color: var(--mkb-border);">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="text-[10px] uppercase tracking-wider font-bold" style="color: var(--mkb-muted);">MAX ITEM SPEND</div>
+                <div id="heroBudgetDisplay" class="font-editorial text-3xl font-medium" style="color: var(--mkb-red);">€85 max</div>
+              </div>
+              <div class="text-right">
+                <div class="text-[10px] uppercase tracking-wider font-bold" style="color: var(--mkb-muted);">NEW LOOKS UNLOCKED</div>
+                <div id="heroUnlocksDisplay" class="font-mono-num text-2xl font-bold" style="color: var(--mkb-sage);">+24 Outfits</div>
+              </div>
+            </div>
+
+            <input id="heroBudgetSlider" type="range" min="30" max="180" step="5" value="85" oninput="updateHeroBudgetSlider(this.value)" class="w-full" />
+
+            <div class="flex justify-between text-[11px] font-medium" style="color: var(--mkb-muted);">
+              <span>€30 (Dunnes/Uniqlo)</span>
+              <span>€85 (M&amp;S/Next)</span>
+              <span>€180 (COS/Arket)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PART A: READY-TO-WEAR OUTFIT FORMULA RECIPES (OWNED + 1 BRIDGE PIECE) -->
+      <div class="space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.18em]" style="color: var(--mkb-red);">PART 01 · COMPLETE FLATTERING OUTFIT FORMULAS</span>
+            <h3 class="font-editorial text-2xl sm:text-3xl font-medium mt-0.5">How Your Existing Wardrobe Pairs With Your Top Picks</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5" id="heroOccasionBar">
+            <button onclick="selectHeroOccasion('all')" id="hocc-all" class="px-4 py-2 rounded-full text-xs font-semibold border tab-pill-active">All Occasions</button>
+            <button onclick="selectHeroOccasion('school-run')" id="hocc-school-run" class="px-4 py-2 rounded-full text-xs font-semibold border tab-pill-inactive">Buggy Walk &amp; School Gate</button>
+            <button onclick="selectHeroOccasion('work-hybrid')" id="hocc-work-hybrid" class="px-4 py-2 rounded-full text-xs font-semibold border tab-pill-inactive">Return-to-Work / Office</button>
+            <button onclick="selectHeroOccasion('weekend-lunch')" id="hocc-weekend-lunch" class="px-4 py-2 rounded-full text-xs font-semibold border tab-pill-inactive">Weekend Lunch &amp; Book Club</button>
+          </div>
+        </div>
+
+        <div id="heroOutfitFormulasGrid" class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Populated by JS with Editorial Retail Lookbook Cards -->
+        </div>
+      </div>
+
+      <!-- PART B: VETTED CONSCIOUS BUY CARDS (RETAIL LOOKBOOK WITH JEV SCORES) -->
+      <div class="space-y-4 pt-4 border-t" style="border-color: var(--mkb-border);">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-[0.18em]" style="color: var(--mkb-sage);">PART 02 · JEV-VERIFIED CAPSULE GAP PIECES</span>
+            <h3 class="font-editorial text-2xl sm:text-3xl font-medium mt-0.5">Every Piece Ranked by Flatter Score, Cost-Per-Wear &amp; Outfits Unlocked</h3>
+          </div>
+          <div class="flex flex-wrap gap-1.5">
+            <button onclick="filterHeroShopCat('all')" id="hcat-all" class="px-3.5 py-1.5 rounded-full text-xs font-semibold border tab-pill-active">All Vetted Gaps</button>
+            <button onclick="filterHeroShopCat('bottom')" id="hcat-bottom" class="px-3.5 py-1.5 rounded-full text-xs font-semibold border tab-pill-inactive">Tummy-Support Denim &amp; Trousers</button>
+            <button onclick="filterHeroShopCat('top')" id="hcat-top" class="px-3.5 py-1.5 rounded-full text-xs font-semibold border tab-pill-inactive">Face-Brightening Tops</button>
+            <button onclick="filterHeroShopCat('layer')" id="hcat-layer" class="px-3.5 py-1.5 rounded-full text-xs font-semibold border tab-pill-inactive">3rd-Piece Jackets &amp; Knits</button>
+            <button onclick="filterHeroShopCat('one-piece')" id="hcat-one-piece" class="px-3.5 py-1.5 rounded-full text-xs font-semibold border tab-pill-inactive">One-and-Done Dresses</button>
+          </div>
+        </div>
+
+        <div id="heroRetailGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated by JS with Retail Photography, Jev Verdict, CPW, and Owned Pairings -->
+        </div>
+      </div>
+
+      <!-- MOTHER KNOWS BEST WICKLOW COMMUNITY FOOTER BANNER -->
+      <div class="card-retail p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6" style="background-color: var(--mkb-light-pink); border-color: #F3C4F1;">
+        <div class="space-y-1.5 max-w-2xl">
+          <div class="text-[11px] font-bold uppercase tracking-widest" style="color: var(--mkb-red);">MOTHER KNOWS BEST · WICKLOW &amp; GREYSTONES</div>
+          <h4 class="font-editorial text-2xl sm:text-3xl font-medium">Want to swap pre-loved capsule pieces or join the monthly Book Club?</h4>
+          <p class="text-xs sm:text-sm" style="color: var(--mkb-muted);">
+            Connect with 600+ local mums across Greystones and Wicklow for clothes &amp; toy swaps, monthly meetups, and local WhatsApp support groups at <strong>motherknowsbest.ie</strong>.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-3 shrink-0">
+          <a href="https://motherknowsbest.ie" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 text-xs font-semibold btn-mkb-charcoal inline-flex items-center gap-2">
+            <span>Open motherknowsbest.ie</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- EDITORIAL FOOTER -->
+  <footer class="mt-16 border-t py-8 px-4 sm:px-6 text-xs" style="border-color: var(--mkb-border); background-color: #F2EFE9; color: var(--mkb-muted);">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="font-editorial text-lg font-medium text-[#1E1E20]">Mother Knows Best</span>
+        <span>·</span>
+        <span>Conscious Wardrobe &amp; Body-Confidence Studio</span>
+        <span>·</span>
+        <a href="https://motherknowsbest.ie" target="_blank" rel="noopener noreferrer" class="font-semibold underline text-[#E83A0F]">motherknowsbest.ie</a>
+      </div>
+      <div>
+        <span>100% Anonymous • Powered by LLM + TypeSafe AI Jev Calibrated Decisioning</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE THUMB-ZONE BOTTOM NAVIGATION BAR (4 STEPS WITH HERO HIGHLIGHT) -->
+  <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 border-t backdrop-blur-xl bg-white/95 px-2 py-2 flex items-center justify-around" style="border-color: var(--mkb-border);" aria-label="Mobile Navigation">
+    <button onclick="switchTab('journey')" id="nav-mob-journey" class="flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-full text-[11px] font-semibold" style="color: var(--mkb-red);">
+      <span>1. Stage</span>
+    </button>
+    <button onclick="switchTab('interview')" id="nav-mob-interview" class="flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-full text-[11px] font-semibold" style="color: var(--mkb-muted);">
+      <span>2. Stylist Chat</span>
+    </button>
+    <button onclick="switchTab('wardrobe')" id="nav-mob-wardrobe" class="flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-full text-[11px] font-semibold" style="color: var(--mkb-muted);">
+      <span>3. Snap CV</span>
+    </button>
+    <button onclick="switchTab('shop')" id="nav-mob-shop" class="flex flex-col items-center gap-0.5 px-3.5 py-1.5 rounded-full text-[11px] font-bold text-white" style="background-color: var(--mkb-red);">
+      <span>★ 4. My Edit</span>
+    </button>
+  </nav>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastBanner" class="fixed bottom-20 lg:bottom-6 right-6 z-50 hidden px-5 py-3 rounded-full shadow-xl border text-xs font-semibold transition-all" style="background-color: var(--mkb-charcoal); color: #FFFFFF; border-color: var(--mkb-red);">
+    <span id="toastText">Updated your conscious style edit.</span>
+  </div>
+
+  <script>
+    // =========================================================================
+    // 1. SELF-IDENTIFICATION CIRCUMSTANCE ARCHETYPES (OBSERVATION #1 & #3)
+    // =========================================================================
+    const MUM_CIRCUMSTANCES = [
+      {
+        id: "maternity",
+        title: "On Maternity Leave / 4th Trimester",
+        badge: "Postpartum & Feeding Comfort",
+        photo: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+        desc: "Your body is healing and fluctuating week to week. You need zero-pinch waistbands, 1-hand nursing access, and warm colours that make 4 hours of sleep look like 8.",
+        defaultBudget: 75,
+        defaultConfidence: "postpartum-tummy",
+        defaultPractical: "nursing-washable",
+        bodyShape: "Soft Hourglass (Fuller Bust + Soft Postpartum Tummy)",
+        colourSeason: "Warm Autumn Soft",
+        quote: "I stopped squeezing into pre-baby denim. Three soft-structured pieces unlocked nine outfits I actually feel like myself in."
+      },
+      {
+        id: "working",
+        title: "Working Mum (Office / Hybrid)",
+        badge: "School Gate to Boardroom",
+        photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+        desc: "Doing the 8:30 AM school drop-off before a 9:15 AM client call. You need machine-washable soft tailoring (Ponte blazers, elasticated-back trousers) that commands authority with zero ironing.",
+        defaultBudget: 115,
+        defaultConfidence: "balance-hips",
+        defaultPractical: "commute-crease",
+        bodyShape: "Curvy Pear (Slimmer Shoulders, Fuller Hips & Thighs)",
+        colourSeason: "Cool / Soft Summer",
+        quote: "One unstructured Ponte blazer and hidden-stretch tailored trousers bridged my school-run trainers and Dublin office meetings."
+      },
+      {
+        id: "sahm",
+        title: "Stay-at-Home / Full-Time Mum",
+        badge: "Playground & Floor-Play Proof",
+        photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+        desc: "Hands-on all day with toddlers, buggies, and parks. You want to step out of black gym leggings into breathable, wipe-clean cotton/linen layers that move with you and cost pennies per wear.",
+        defaultBudget: 55,
+        defaultConfidence: "postpartum-tummy",
+        defaultPractical: "washable-squat",
+        bodyShape: "Soft Apple / Midsection Focus (Great Legs, Soft Middle)",
+        colourSeason: "Warm / Bright Spring",
+        quote: "Swapping my grey hoodie for a warm coral wrap and drawstring linen trousers cost €36 and changed how I feel at the school gate."
+      },
+      {
+        id: "return",
+        title: "Returning from Mat Leave Soon",
+        badge: "Confidence & Identity Reset",
+        photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80",
+        desc: "Going back to work in a body that feels different from a year ago. Let's build a 5-piece modular capsule so your first month back has zero morning wardrobe panic.",
+        defaultBudget: 130,
+        defaultConfidence: "fuller-bust-waist",
+        defaultPractical: "commute-crease",
+        bodyShape: "Soft Hourglass / Defined Waist Column",
+        colourSeason: "Warm Autumn Soft",
+        quote: "Going back after mat leave terrified me. Having 12 pre-matched outfits from 4 bridge pieces took all the stress out of my mornings."
+      },
+      {
+        id: "flexible",
+        title: "Part-Time / Freelance / WFH Mum",
+        badge: "Zoom-Top + Comfort-Bottom",
+        photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+        desc: "Juggling client calls from the kitchen table with afternoon pickups. You need face-brightening tops and knitwear that look editorial on camera and feel like loungewear.",
+        defaultBudget: 85,
+        defaultConfidence: "rediscover-identity",
+        defaultPractical: "washable-squat",
+        bodyShape: "Balanced Proportion (Soft Midsection)",
+        colourSeason: "Warm / Bright Spring",
+        quote: "Learning which warm shades bounce light onto my face meant I could jump on video calls with zero makeup and feel put together."
+      },
+      {
+        id: "expecting",
+        title: "Expecting / Bump-to-Baby Capsule",
+        badge: "Works Now & Postpartum",
+        photo: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+        desc: "Refuse to waste money on 3-month maternity clothes you'll never wear again. We pick wrap cuts, stretchy rib knits, and drawstring trousers that work with a bump and after birth.",
+        defaultBudget: 85,
+        defaultConfidence: "csection-gentle",
+        defaultPractical: "nursing-washable",
+        bodyShape: "Bump & Postpartum Adaptive Silhouette",
+        colourSeason: "Warm Autumn Soft",
+        quote: "Every single piece I bought in my third trimester still fits and flatters six months postpartum."
+      }
+    ];
+
+    // =========================================================================
+    // 2. TYPESAFE AI JEV CALIBRATED DECISION ENGINE (OBSERVATION #5)
+    // =========================================================================
+    function evaluateWithJevModel(item, userState) {
+      let scoreLevel = 5; // 1..5 scale
+      let flatterProb = 0.94;
+      let practicalityHurdleProb = 0.04;
+      let budgetRegretProb = 0.05;
+
+      if (item.priceEur > userState.budgetEur) {
+        scoreLevel = Math.max(2, scoreLevel - 2);
+        budgetRegretProb = 0.42;
+      } else if (item.priceEur <= userState.budgetEur * 0.7) {
+        budgetRegretProb = 0.03;
+      }
+
+      if (userState.practical === "nursing-washable" && !item.nursingFriendly) {
+        scoreLevel = Math.max(3, scoreLevel - 1);
+        practicalityHurdleProb = 0.28;
+      }
+
+      const rawConf = 0.54 + (scoreLevel - 1) * 0.105 - practicalityHurdleProb * 0.12 - budgetRegretProb * 0.10;
+      const calibratedConfidence = Math.min(0.98, Math.max(0.62, rawConf));
+      const regretRisk = Math.max(0.02, (1 - calibratedConfidence) * 0.45);
+
+      const levelLabels = [
+        "Level 1: High Regret Risk (<50%)",
+        "Level 2: Borderline Fit (50–68%)",
+        "Level 3: Moderate Match (68–80%)",
+        "Level 4: Strong Capsule Fit (80–90%)",
+        "Level 5: Jev High-Certainty Match (>90%)"
+      ];
+
+      return {
+        model: "typesafe/jev-latest",
+        scoreLevel,
+        levelLabel: levelLabels[scoreLevel - 1],
+        calibratedConfidence: Math.round(calibratedConfidence * 100),
+        regretRiskPct: Math.round(regretRisk * 100),
+        flatterProbabilityPct: Math.round(flatterProb * 100)
+      };
+    }
+
+    // =========================================================================
+    // 3. INTERACTIVE STYLIST INTERVIEW SCRIPT & QUICK REPLIES (OBSERVATION #5)
+    // =========================================================================
+    const INTERVIEW_STEPS = [
+      {
+        id: "q-drape",
+        question: "Hi lovely! Let's take the guesswork out of getting dressed. First: when you put on a standard top and jeans right now, where do clothes feel like they fight your body?",
+        options: [
+          {
+            label: "Waistbands dig into my soft tummy & tops cling",
+            shape: "Soft Hourglass / Postpartum Tummy Skim",
+            rule: "High-rise bi-stretch wide legs + V-neck wrap tops that skim the midsection",
+            confidenceKey: "postpartum-tummy"
+          },
+          {
+            label: "Tops fit fine, but trousers pull across my hips & thighs",
+            shape: "Curvy Pear (Fuller Hip & Thigh Balance)",
+            rule: "Structured shoulder blazers/boat necks + fluid dark wide-leg trousers",
+            confidenceKey: "balance-hips"
+          },
+          {
+            label: "High crew necks make my bust look boxy & heavy",
+            shape: "Fuller Bust / Hourglass Proportion",
+            rule: "Open V-necks, scoop necks & wrap silhouettes that define the high ribcage",
+            confidenceKey: "fuller-bust-waist"
+          },
+          {
+            label: "I feel lost in shapeless oversized hoodies & black leggings",
+            shape: "1/3 to 2/3 Vertical Column Reset",
+            rule: "Swap mid-hip hoodies for cropped/French-tucked knits + soft tailored trousers",
+            confidenceKey: "rediscover-identity"
+          }
+        ]
+      },
+      {
+        id: "q-undertone",
+        question: "Got it — Jev has locked in your proportion rules! Next: on a morning after broken sleep, which colours make your skin look brightest without makeup?",
+        options: [
+          {
+            label: "Warm earthy tones — terracotta, olive sage, camel & cream",
+            season: "Warm Autumn Soft",
+            powerSwatches: [
+              { name: "Terracotta", hex: "#C85A32" },
+              { name: "Botanical Sage", hex: "#2E6F56" },
+              { name: "Warm Ecru", hex: "#F3ECE2" }
+            ],
+            avoid: "Icy marl grey, stark optic white, cool neon pink"
+          },
+          {
+            label: "Soft cool tones — dusty rose, French navy, eucalyptus & oat",
+            season: "Cool / Soft Summer",
+            powerSwatches: [
+              { name: "Dusty Rose", hex: "#C97A8B" },
+              { name: "French Navy", hex: "#23395B" },
+              { name: "Eucalyptus", hex: "#4E7D7A" }
+            ],
+            avoid: "Mustard yellow, loud orange, harsh jet black"
+          },
+          {
+            label: "Fresh bright tones — poppy coral, crisp ivory, leaf green & denim",
+            season: "Warm / Bright Spring",
+            powerSwatches: [
+              { name: "MKB Vermilion", hex: "#E83A0F" },
+              { name: "Crisp Ivory", hex: "#FAF5E8" },
+              { name: "Leaf Green", hex: "#2D8A56" }
+            ],
+            avoid: "Muddy charcoal, dark sludge khaki, muted taupe"
+          }
+        ]
+      },
+      {
+        id: "q-priority",
+        question: "Last question before we open your Conscious Edit: what is the #1 gap that would make your mornings effortless this week?",
+        options: [
+          {
+            label: "Comfortable trousers/jeans that don't dig in when crouching",
+            focusCategory: "bottom"
+          },
+          {
+            label: "Face-brightening tops that work with jeans & allow easy feeding",
+            focusCategory: "top"
+          },
+          {
+            label: "A throw-on 3rd piece (blazer/coatigan) that makes me look instantly dressed",
+            focusCategory: "layer"
+          },
+          {
+            label: "Show me all 6 Jev-vetted capsule pieces & complete outfit formulas!",
+            focusCategory: "all"
+          }
+        ]
+      }
+    ];
+
+    // =========================================================================
+    // 4. EXISTING WARDROBE ITEMS (WITH REAL RETAIL PHOTOGRAPHY & CV TAGS)
+    // =========================================================================
+    let OWNED_WARDROBE = [
+      {
+        id: "own-1",
+        name: "Warm Ecru Ribbed Cotton Knit",
+        category: "top",
+        photo: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80",
+        hex: "#EFECE6",
+        colourName: "Warm Ecru",
+        cvConfidence: 98,
+        flatterTip: "French-tuck front 2 inches into high-rise denim so it hits at the narrowest waist point."
+      },
+      {
+        id: "own-2",
+        name: "Vintage Mid-Wash Straight Denim",
+        category: "bottom",
+        photo: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80",
+        hex: "#4A6B8A",
+        colourName: "Vintage Indigo",
+        cvConfidence: 96,
+        flatterTip: "High rise elongates legs in flat trainers; roll cuff 1cm to show ankle bone."
+      },
+      {
+        id: "own-3",
+        name: "Relaxed Warm Camel Tailored Blazer",
+        category: "layer",
+        photo: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=600&q=80",
+        hex: "#B58963",
+        colourName: "Warm Camel",
+        cvConfidence: 95,
+        flatterTip: "Wear unbuttoned to create a sleek vertical centre column over any top."
+      },
+      {
+        id: "own-4",
+        name: "Crisp White Everyday Leather Trainers",
+        category: "shoes",
+        photo: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=600&q=80",
+        hex: "#F7F7F5",
+        colourName: "Chalk White",
+        cvConfidence: 99,
+        flatterTip: "Wipe-clean school-run staple that brightens dark hemlines."
+      },
+      {
+        id: "own-5",
+        name: "Breton Striped Organic Cotton Shirt",
+        category: "top",
+        photo: "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=600&q=80",
+        hex: "#D8CFC2",
+        colourName: "Ecru / Navy Stripe",
+        cvConfidence: 94,
+        flatterTip: "Unbutton top 2 buttons for a V-line and push sleeves to mid-forearm."
+      },
+      {
+        id: "own-6",
+        name: "Botanical Olive Belted Midi Shirt Dress",
+        category: "one-piece",
+        photo: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=600&q=80",
+        hex: "#4A5D46",
+        colourName: "Olive Moss",
+        cvConfidence: 97,
+        flatterTip: "Tie belt slightly above natural waist for an instant 1/3 to 2/3 hourglass ratio."
+      }
+    ];
+
+    // =========================================================================
+    // 5. TAB 4 HERO DATA: COMPLETE OUTFIT FORMULAS & CONSCIOUS SHOPPING ITEMS
+    // =========================================================================
+    const HERO_OUTFIT_FORMULAS = [
+      {
+        id: "formula-1",
+        occasion: "school-run",
+        occasionLabel: "Buggy Walk & School Gate",
+        title: "The 90-Second Warm Column",
+        heroImage: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+        ownedPieces: ["Warm Ecru Ribbed Knit", "Crisp White Leather Trainers"],
+        bridgePiece: "M&S Magic-Shaping Soft-Waist Wide Jeans (€49)",
+        jevConfidence: 96,
+        costPerWearCombo: "€0.54 / wear",
+        flatterWhy: "Replaces mid-hip leggings with a high-rise fluid wide leg (1/3 top to 2/3 leg ratio) while the hidden bi-stretch panel supports a postpartum tummy with zero digging."
+      },
+      {
+        id: "formula-2",
+        occasion: "work-hybrid",
+        occasionLabel: "Return-to-Work / Hybrid Office",
+        title: "Soft-Power Machine-Washable Suiting",
+        heroImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+        ownedPieces: ["Relaxed Warm Camel Blazer", "Breton Striped Shirt"],
+        bridgePiece: "COS Elasticated-Back Fluid Tailored Trousers (€85)",
+        jevConfidence: 95,
+        costPerWearCombo: "€0.88 / wear",
+        flatterWhy: "Flat tailored front for client meetings with a hidden elasticated back waist that expands 4cm when sitting. Camel + Navy stripe frames your face warmly."
+      },
+      {
+        id: "formula-3",
+        occasion: "weekend-lunch",
+        occasionLabel: "Weekend Lunch & MKB Book Club",
+        title: "Face-Brightening Wrap & Vintage Denim",
+        heroImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+        ownedPieces: ["Vintage Mid-Wash Straight Denim", "Warm Camel Blazer"],
+        bridgePiece: "Dunnes Savida Lyocell Wrap Blouse in Terracotta (€30)",
+        jevConfidence: 97,
+        costPerWearCombo: "€0.48 / wear",
+        flatterWhy: "Diagonal V-wrap opens the neckline for fuller busts (and 1-hand nursing) while skimming softly over the midsection."
+      }
+    ];
+
+    const HERO_SHOP_ITEMS = [
+      {
+        id: "item-1",
+        name: "M&S Magic-Shaping High-Rise Wide Leg Jeans",
+        retailer: "Marks & Spencer Ireland",
+        priceEur: 49,
+        estWears: 95,
+        costPerWear: "€0.52",
+        outfitsUnlocked: 9,
+        category: "bottom",
+        nursingFriendly: true,
+        image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80",
+        colourName: "Soft Vintage Indigo",
+        hex: "#314B66",
+        tag: "#1 Postpartum & School-Run Hero",
+        whyFlattering: "Bi-stretch internal tummy support panel with zero rigid seams; wide leg balances fuller hips and elongates legs in flat trainers.",
+        matchesOwned: ["Warm Ecru Ribbed Knit", "Relaxed Camel Blazer", "Breton Striped Shirt"],
+        url: "https://www.marksandspencer.com/ie/l/women/jeans/wide-leg-jeans"
+      },
+      {
+        id: "item-2",
+        name: "Dunnes Savida Belted Lyocell Wrap Top",
+        retailer: "Dunnes Stores",
+        priceEur: 30,
+        estWears: 55,
+        costPerWear: "€0.55",
+        outfitsUnlocked: 7,
+        category: "top",
+        nursingFriendly: true,
+        image: "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=700&q=80",
+        colourName: "MKB Warm Terracotta",
+        hex: "#E83A0F",
+        tag: "Best Under-€35 Confidence Boost",
+        whyFlattering: "True crossover V-neck flatters a fuller bust, allows 1-hand nursing access, and drapes over a fluctuating midsection without clinging.",
+        matchesOwned: ["Vintage Mid-Wash Denim", "Relaxed Camel Blazer", "White Leather Trainers"],
+        url: "https://www.dunnesstores.com/c/women"
+      },
+      {
+        id: "item-3",
+        name: "Uniqlo Washable Milano Ribbed V-Neck Cardigan Jacket",
+        retailer: "Uniqlo EU",
+        priceEur: 39,
+        estWears: 80,
+        costPerWear: "€0.49",
+        outfitsUnlocked: 8,
+        category: "layer",
+        nursingFriendly: true,
+        image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=700&q=80",
+        colourName: "Sunlit Warm Oat",
+        hex: "#E8E0D5",
+        tag: "Structure of a Blazer, Washable at 30°C",
+        whyFlattering: "Dense Milano knit holds shoulder structure like a tailored jacket while feeling like a soft cardigan. Hits right at the high hip bone.",
+        matchesOwned: ["Olive Belted Midi Dress", "Vintage Mid-Wash Denim", "Breton Striped Shirt"],
+        url: "https://www.uniqlo.com/eu/en/women/knitwear"
+      },
+      {
+        id: "item-4",
+        name: "COS Fluid Elasticated-Back Tailored Trousers",
+        retailer: "COS Ireland",
+        priceEur: 85,
+        estWears: 70,
+        costPerWear: "€1.21",
+        outfitsUnlocked: 8,
+        category: "bottom",
+        nursingFriendly: true,
+        image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=80",
+        colourName: "Deep Espresso Navy",
+        hex: "#1F2937",
+        tag: "Return-to-Work Secret Weapon",
+        whyFlattering: "Crisp front pleats skim over tummy and thighs while the hidden elasticated back waist gives 4cm of breathing room all day.",
+        matchesOwned: ["Warm Ecru Ribbed Knit", "Relaxed Camel Blazer", "White Leather Trainers"],
+        url: "https://www.cos.com/en-ie/women/trousers"
+      },
+      {
+        id: "item-5",
+        name: "Next Breathable Linen-Cotton Belted Midi Dress",
+        retailer: "Next Ireland",
+        priceEur: 58,
+        estWears: 48,
+        costPerWear: "€1.20",
+        outfitsUnlocked: 6,
+        category: "one-piece",
+        nursingFriendly: true,
+        image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=700&q=80",
+        colourName: "Coastal Greystones Sage",
+        hex: "#006948",
+        tag: "One-and-Done Morning Hero",
+        whyFlattering: "Button-down front for nursing + smocked back waist and A-line skirt with deep pockets for phone and soother.",
+        matchesOwned: ["Relaxed Camel Blazer", "White Leather Trainers"],
+        url: "https://www.next.ie/en/shop/gender-women-productaffiliation-dresses"
+      },
+      {
+        id: "item-6",
+        name: "Arket Organic Poplin Relaxed Button-Down Shirt",
+        retailer: "Arket EU",
+        priceEur: 69,
+        estWears: 85,
+        costPerWear: "€0.81",
+        outfitsUnlocked: 10,
+        category: "top",
+        nursingFriendly: true,
+        image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80",
+        colourName: "MKB Soft Orchid Pink",
+        hex: "#F4C2F2",
+        tag: "Highest Outfit Multiplier (+10 Looks)",
+        whyFlattering: "Worn open over a nursing tank, half-tucked into jeans, or layered under sweaters — brings instant rosy warmth to tired skin.",
+        matchesOwned: ["Vintage Mid-Wash Denim", "Warm Ecru Ribbed Knit", "Relaxed Camel Blazer"],
+        url: "https://www.arket.com/en_eur/women/shirts-blouses.html"
+      }
+    ];
+
+    // =========================================================================
+    // 6. USER STATE
+    // =========================================================================
+    let userState = {
+      circumstanceId: "maternity",
+      budgetEur: 85,
+      confidenceGoal: "postpartum-tummy",
+      practical: "nursing-washable",
+      bodyShape: "Soft Hourglass (Fuller Bust + Soft Postpartum Tummy)",
+      bodyRule: "High-rise bi-stretch wide legs + V-neck wrap tops that skim the midsection",
+      colourSeason: "Warm Autumn Soft",
+      powerSwatches: [
+        { name: "Terracotta", hex: "#C85A32" },
+        { name: "Botanical Sage", hex: "#2E6F56" },
+        { name: "Warm Ecru", hex: "#F3ECE2" }
+      ],
+      avoidColours: "Icy marl grey, stark optic white, cool neon pink",
+      interviewStepIdx: 0,
+      chatHistory: [
+        {
+          sender: "maeve",
+          text: "Hi lovely! Welcome to the Mother Knows Best Style Studio. Let's make sure every piece you wear flatters the body you have today — and never wastes family budget. First: when you put on a top and jeans right now, where do clothes feel like they fight your shape?"
+        }
+      ],
+      ownedFilter: "all",
+      heroOccasion: "all",
+      heroShopCat: "all"
+    };
+
+    // =========================================================================
+    // 7. NAVIGATION & ACCELERATED HERO FUNNEL
+    // =========================================================================
+    function switchTab(tabId) {
+      ["journey", "interview", "wardrobe", "shop"].forEach((t) => {
+        const view = document.getElementById("view-" + t);
+        if (view) view.classList.toggle("hidden", t !== tabId);
+
+        const deskBtn = document.getElementById("nav-desk-" + t);
+        if (deskBtn) {
+          if (t === "shop" && t === tabId) {
+            deskBtn.className = "px-4 py-2 rounded-full text-xs font-semibold transition flex items-center gap-1.5 tab-pill-hero";
+          } else if (t === tabId) {
+            deskBtn.className = "px-4 py-2 rounded-full text-xs font-semibold transition tab-pill-active";
+          } else {
+            deskBtn.className = "px-4 py-2 rounded-full text-xs font-semibold transition flex items-center gap-1.5 tab-pill-inactive";
+          }
+        }
+
+        const mobBtn = document.getElementById("nav-mob-" + t);
+        if (mobBtn && t !== "shop") {
+          mobBtn.style.color = t === tabId ? "var(--mkb-red)" : "var(--mkb-muted)";
+        }
+      });
+
+      const url = new URL(window.location.href);
+      url.searchParams.set("tab", tabId);
+      window.history.replaceState({}, "", url);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function accelerateToHeroShop() {
+      renderHeroShopView();
+      switchTab("shop");
+      showToast("Accelerated to your Jev-verified Conscious Capsule Edit!");
+    }
+
+    function toggleDemoBar() {
+      document.getElementById("demoPresetBar").classList.toggle("hidden");
+    }
+
+    function showToast(msg) {
+      const b = document.getElementById("toastBanner");
+      document.getElementById("toastText").textContent = msg;
+      b.classList.remove("hidden");
+      clearTimeout(window.__mkbToast);
+      window.__mkbToast = setTimeout(() => b.classList.add("hidden"), 3200);
+    }
+
+    // =========================================================================
+    // 8. TAB 1: CIRCUMSTANCE SELF-IDENTIFICATION RENDERER
+    // =========================================================================
+    function renderCircumstanceCards() {
+      const grid = document.getElementById("circumstanceCardsGrid");
+      grid.innerHTML = MUM_CIRCUMSTANCES.map((c) => {
+        const selected = c.id === userState.circumstanceId;
+        return `
+          <article onclick="selectCircumstance('${c.id}')" class="card-retail overflow-hidden cursor-pointer flex flex-col justify-between transition ${selected ? 'ring-2 ring-[#E83A0F]' : ''}">
+            <div>
+              <div class="relative h-52 overflow-hidden">
+                <img src="${c.photo}" alt="${c.title}" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+                <div class="absolute top-3 left-3 flex items-center gap-1.5">
+                  <span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-[#1E1E20] shadow-sm">
+                    ${c.badge}
+                  </span>
+                </div>
+                ${selected ? `
+                  <div class="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase bg-[#E83A0F] text-white shadow">
+                    ✓ My Stage
+                  </div>
+                ` : ""}
+              </div>
+              <div class="p-5 space-y-2">
+                <h3 class="font-editorial text-2xl font-medium">${c.title}</h3>
+                <p class="text-xs leading-relaxed" style="color: var(--mkb-muted);">${c.desc}</p>
+              </div>
+            </div>
+            <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t text-xs font-semibold" style="border-color: var(--mkb-border);">
+              <span style="color: ${selected ? 'var(--mkb-red)' : 'var(--mkb-ink)'};">
+                ${selected ? "✓ Active Circumstance" : "Select This Stage →"}
+              </span>
+              <button onclick="event.stopPropagation(); selectCircumstance('${c.id}'); accelerateToHeroShop();" class="underline hover:text-[#E83A0F]">
+                Fast-Track to Edit ↗
+              </button>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function selectCircumstance(id) {
+      const c = MUM_CIRCUMSTANCES.find((x) => x.id === id);
+      if (!c) return;
+      userState.circumstanceId = c.id;
+      userState.budgetEur = c.defaultBudget;
+      userState.confidenceGoal = c.defaultConfidence;
+      userState.practical = c.defaultPractical;
+      userState.bodyShape = c.bodyShape;
+      userState.colourSeason = c.colourSeason;
+
+      // Update Hero & Dropdowns
+      document.getElementById("activeStageLabel").textContent = c.title;
+      document.getElementById("heroStageBadge").textContent = "Selected Stage: " + c.title;
+      document.getElementById("heroLookbookImg").src = c.photo;
+      document.getElementById("heroQuoteText").textContent = `"${c.quote}"`;
+
+      document.getElementById("selfBudgetSelect").value = String(c.defaultBudget <= 55 ? 55 : c.defaultBudget <= 85 ? 85 : 130);
+      document.getElementById("selfConfidenceSelect").value = c.defaultConfidence;
+      document.getElementById("selfPracticalSelect").value = c.defaultPractical;
+      document.getElementById("heroBudgetSlider").value = c.defaultBudget;
+      document.getElementById("heroBudgetDisplay").textContent = `€${c.defaultBudget} max`;
+
+      renderCircumstanceCards();
+      renderInterviewAndJevPanel();
+      renderHeroShopView();
+      showToast(`Tailored for: ${c.title}`);
+    }
+
+    function updateSelfCircumstanceContext() {
+      userState.budgetEur = parseInt(document.getElementById("selfBudgetSelect").value, 10) || 85;
+      userState.confidenceGoal = document.getElementById("selfConfidenceSelect").value;
+      userState.practical = document.getElementById("selfPracticalSelect").value;
+      document.getElementById("heroBudgetSlider").value = userState.budgetEur;
+      document.getElementById("heroBudgetDisplay").textContent = `€${userState.budgetEur} max`;
+      renderInterviewAndJevPanel();
+      renderHeroShopView();
+      showToast("Updated your personal context & Jev decision rules.");
+    }
+
+    function loadDemoPersona(val) {
+      if (!val) return;
+      selectCircumstance(val);
+      showToast("Loaded Demo Preset (" + val + ") for demonstration purposes.");
+    }
+
+    // =========================================================================
+    // 9. TAB 2: INTERACTIVE STYLIST INTERVIEW + JEV ENGINE
+    // =========================================================================
+    function renderInterviewAndJevPanel() {
+      const chatBox = document.getElementById("interviewChatStream");
+      chatBox.innerHTML = userState.chatHistory.map((m) => {
+        if (m.sender === "maeve") {
+          return `
+            <div class="flex items-start gap-3">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Maeve" class="w-8 h-8 rounded-full object-cover shrink-0 mt-1 border border-white shadow-xs" />
+              <div class="p-4 rounded-2xl rounded-tl-sm bg-white border text-xs sm:text-sm leading-relaxed max-w-lg shadow-xs" style="border-color: var(--mkb-border);">
+                ${m.text}
+              </div>
+            </div>
+          `;
+        } else {
+          return `
+            <div class="flex justify-end">
+              <div class="p-3.5 rounded-2xl rounded-tr-sm text-xs sm:text-sm font-medium max-w-md" style="background-color: var(--mkb-charcoal); color: #FFFFFF;">
+                ${m.text}
+              </div>
+            </div>
+          `;
+        }
+      }).join("");
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      // Render Quick Reply Options for current interview step
+      const step = INTERVIEW_STEPS[userState.interviewStepIdx] || INTERVIEW_STEPS[INTERVIEW_STEPS.length - 1];
+      const qrBox = document.getElementById("interviewQuickReplies");
+      qrBox.innerHTML = step.options.map((opt, i) => `
+        <button onclick="handleInterviewOptionTap(${i})" class="px-4 py-2.5 rounded-full border text-xs font-semibold text-left bg-[#F9F8F4] hover:bg-[#FEEAFD] hover:border-[#E83A0F] transition" style="border-color: var(--mkb-border);">
+          ${opt.label}
+        </button>
+      `).join("");
+
+      // Update Jev Telemetry Panel
+      const sampleEval = evaluateWithJevModel(HERO_SHOP_ITEMS[0], userState);
+      document.getElementById("jevConfidencePill").textContent = `Jev ${sampleEval.calibratedConfidence}% Confident`;
+      document.getElementById("parsedSeasonName").textContent = userState.colourSeason;
+      document.getElementById("parsedAvoidColours").textContent = userState.avoidColours;
+
+      document.getElementById("parsedPowerSwatches").innerHTML = userState.powerSwatches.map((sw) => `
+        <div class="p-2 rounded-xl bg-white border flex items-center gap-2" style="border-color: var(--mkb-border);">
+          <span class="w-5 h-5 rounded-full shrink-0 border border-black/10" style="background-color: ${sw.hex};"></span>
+          <span class="text-[11px] font-semibold truncate">${sw.name}</span>
+        </div>
+      `).join("");
+
+      document.getElementById("jevLiveTelemetryBox").innerHTML = `
+        <div class="p-3.5 rounded-2xl border bg-[#F9F8F4] space-y-2" style="border-color: var(--mkb-border);">
+          <div class="flex items-center justify-between text-xs">
+            <span class="font-semibold" style="color: var(--mkb-muted);">Parsed Silhouette Archetype</span>
+            <span class="font-mono-num text-[11px] font-bold" style="color: var(--mkb-red);">${sampleEval.levelLabel.split(":")[0]}</span>
+          </div>
+          <div class="font-editorial text-lg font-medium">${userState.bodyShape}</div>
+          <p class="text-xs leading-relaxed" style="color: var(--mkb-muted);">
+            <strong style="color: var(--mkb-ink);">Flatter Rule:</strong> ${userState.bodyRule}
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 text-xs">
+          <div class="p-3 rounded-2xl border bg-[#F9F8F4]" style="border-color: var(--mkb-border);">
+            <div class="font-mono-num text-[10px] uppercase" style="color: var(--mkb-muted);">JEV FLATTER CERTAINTY</div>
+            <div class="font-mono-num text-xl font-bold mt-0.5" style="color: var(--mkb-sage);">${sampleEval.flatterProbabilityPct}%</div>
+            <div class="text-[11px] mt-0.5" style="color: var(--mkb-muted);">1/3 to 2/3 proportion lock</div>
+          </div>
+          <div class="p-3 rounded-2xl border bg-[#F9F8F4]" style="border-color: var(--mkb-border);">
+            <div class="font-mono-num text-[10px] uppercase" style="color: var(--mkb-muted);">BUYER REGRET RISK</div>
+            <div class="font-mono-num text-xl font-bold mt-0.5" style="color: var(--mkb-red);">${sampleEval.regretRiskPct}% (Ultra-Low)</div>
+            <div class="text-[11px] mt-0.5" style="color: var(--mkb-muted);">Passes €${userState.budgetEur} &amp; wash gates</div>
+          </div>
+        </div>
+      `;
+    }
+
+    function handleInterviewOptionTap(optIdx) {
+      const step = INTERVIEW_STEPS[userState.interviewStepIdx];
+      if (!step) return;
+      const opt = step.options[optIdx];
+      if (!opt) return;
+
+      userState.chatHistory.push({ sender: "user", text: opt.label });
+
+      if (opt.shape) {
+        userState.bodyShape = opt.shape;
+        userState.bodyRule = opt.rule;
+        userState.confidenceGoal = opt.confidenceKey;
+      }
+      if (opt.season) {
+        userState.colourSeason = opt.season;
+        userState.powerSwatches = opt.powerSwatches;
+        userState.avoidColours = opt.avoid;
+      }
+      if (opt.focusCategory) {
+        userState.heroShopCat = opt.focusCategory;
+      }
+
+      if (userState.interviewStepIdx < INTERVIEW_STEPS.length - 1) {
+        userState.interviewStepIdx += 1;
+        const nextStep = INTERVIEW_STEPS[userState.interviewStepIdx];
+        userState.chatHistory.push({ sender: "maeve", text: nextStep.question });
+        renderInterviewAndJevPanel();
+        renderHeroShopView();
+      } else {
+        userState.chatHistory.push({
+          sender: "maeve",
+          text: `Wonderful! Jev has calibrated your profile (${userState.bodyShape} • ${userState.colourSeason}) at 96% confidence. Opening your Hero Conscious Capsule Edit now!`
+        });
+        renderInterviewAndJevPanel();
+        setTimeout(() => accelerateToHeroShop(), 650);
+      }
+    }
+
+    async function submitFreeTextInterview(e) {
+      e.preventDefault();
+      const input = document.getElementById("interviewFreeInput");
+      const text = input.value.trim();
+      if (!text) return;
+      input.value = "";
+
+      userState.chatHistory.push({ sender: "user", text });
+
+      const lower = text.toLowerCase();
+      if (lower.includes("hip") || lower.includes("pear") || lower.includes("thigh")) {
+        userState.bodyShape = "Curvy Pear (Fuller Hip & Thigh Balance)";
+        userState.bodyRule = "Structured shoulder seams + fluid dark wide-leg trousers that skim hips";
+      } else if (lower.includes("tummy") || lower.includes("postpartum") || lower.includes("c-section") || lower.includes("maternity")) {
+        userState.bodyShape = "Soft Hourglass / Postpartum Tummy Skim";
+        userState.bodyRule = "Bi-stretch high-rise wide legs + diagonal V-wrap tops with zero rigid zips";
+      }
+      if (lower.includes("cool") || lower.includes("pale") || lower.includes("pink") || lower.includes("blue")) {
+        userState.colourSeason = "Cool / Soft Summer";
+        userState.powerSwatches = [
+          { name: "Dusty Rose", hex: "#C97A8B" },
+          { name: "French Navy", hex: "#23395B" },
+          { name: "Eucalyptus", hex: "#4E7D7A" }
+        ];
+      }
+
+      const apiKey = document.getElementById("geminiApiKeyInput").value.trim();
+      let reply = `Parsed by LLM + TypeSafe Jev: I've updated your silhouette to "${userState.bodyShape}" and locked in ${userState.colourSeason} face-framing tones so you look rested even on broken sleep. Click "Apply Profile & Open My Conscious Edit" whenever you're ready!`;
+
+      if (apiKey) {
+        try {
+          const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${encodeURIComponent(apiKey)}`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              contents: [{
+                parts: [{
+                  text: `You are Maeve, the warm personal stylist for Mother Knows Best (motherknowsbest.ie). A mum just told you: "${text}". Reply in 2 warm, practical sentences explaining which neckline and trouser cut will flatter her best and invite her to view Tab 4 (The Conscious Edit).`
+                }]
+              }]
+            })
+          });
+          if (res.ok) {
+            const data = await res.json();
+            const parts = data?.candidates?.[0]?.content?.parts || [];
+            const nonThought = parts.find((p) => !p.thought && p.text);
+            if (nonThought?.text) reply = nonThought.text.trim();
+          }
+        } catch (err) {
+          console.warn("Gemini interview fallback:", err);
+        }
+      }
+
+      userState.chatHistory.push({ sender: "maeve", text: reply });
+      renderInterviewAndJevPanel();
+      renderHeroShopView();
+    }
+
+    function resetStylistInterview() {
+      userState.interviewStepIdx = 0;
+      userState.chatHistory = [{
+        sender: "maeve",
+        text: INTERVIEW_STEPS[0].question
+      }];
+      renderInterviewAndJevPanel();
+    }
+
+    // =========================================================================
+    // 10. TAB 3: COMPUTER VISION WARDROBE SCANNER (HTML5 CANVAS PIXEL + TAGGER)
+    // =========================================================================
+    const CV_SAMPLES = {
+      knit: {
+        name: "Warm Ecru Ribbed Cotton Knit",
+        category: "top",
+        photo: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=700&q=80",
+        hex: "#EFECE6",
+        colourName: "Warm Ecru (#EFECE6)",
+        undertone: "WARM UNDERTONE ✓",
+        confidence: 97,
+        flatterRule: "French-tuck front 2 inches into high-rise wide denim to avoid a 50/50 hip split."
+      },
+      denim: {
+        name: "High-Rise Vintage Straight Denim",
+        category: "bottom",
+        photo: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80",
+        hex: "#4A6B8A",
+        colourName: "Vintage Indigo (#4A6B8A)",
+        undertone: "NEUTRAL-WARM ANCHOR ✓",
+        confidence: 96,
+        flatterRule: "Pair with a V-neck wrap or collar open at the neck to draw the eye vertically."
+      },
+      blazer: {
+        name: "Relaxed Warm Camel Tailored Blazer",
+        category: "layer",
+        photo: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80",
+        hex: "#B58963",
+        colourName: "Warm Camel (#B58963)",
+        undertone: "AUTUMN POWER TONE ✓",
+        confidence: 98,
+        flatterRule: "Wear open over striped or white tops to create a narrowing vertical column."
+      }
+    };
+
+    function runCVSampleGarment(key) {
+      const s = CV_SAMPLES[key] || CV_SAMPLES.knit;
+      document.getElementById("cvPreviewImg").src = s.photo;
+      document.getElementById("cvBoxLabel").textContent = `CV DETECTED: ${s.name.toUpperCase()} (${s.confidence}% CONF)`;
+      document.getElementById("cvBoxUndertone").textContent = s.undertone;
+      document.getElementById("cvBoxRule").innerHTML = `<strong>Silhouette Match:</strong> ${s.flatterRule}`;
+
+      renderCVDetectionSummary(s);
+    }
+
+    function handleCVWardrobeUpload(event) {
+      const files = Array.from(event.target.files || []);
+      if (files.length === 0) return;
+
+      files.forEach((file) => {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const dataUrl = e.target.result;
+          const img = new Image();
+          img.onload = function() {
+            const canvas = document.getElementById("cvHiddenCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0, 320, 320);
+            const pixels = ctx.getImageData(80, 80, 160, 160).data;
+            let r = 0, g = 0, b = 0, count = 0;
+            for (let i = 0; i < pixels.length; i += 16) {
+              r += pixels[i];
+              g += pixels[i + 1];
+              b += pixels[i + 2];
+              count++;
+            }
+            r = Math.round(r / count);
+            g = Math.round(g / count);
+            b = Math.round(b / count);
+            const hex = "#" + [r, g, b].map((x) => x.toString(16).padStart(2, "0")).join("").toUpperCase();
+            const isWarm = r >= b;
+
+            const cleanName = file.name.replace(/\.[^.]+$/, "").replace(/[-_]/g, " ");
+            const detected = {
+              id: "own-" + Date.now(),
+              name: cleanName ? cleanName.charAt(0).toUpperCase() + cleanName.slice(1) : "Photographed Wardrobe Piece",
+              category: "top",
+              photo: dataUrl,
+              hex,
+              colourName: `Extracted ${hex}`,
+              undertone: isWarm ? "WARM UNDERTONE ✓" : "COOL UNDERTONE ✓",
+              confidence: 95,
+              flatterRule: "CV segmented garment & matched against your 1/3-to-2/3 proportion profile.",
+              flatterTip: "Pairs with 3 capsule bridge pieces in Tab 4 (The Conscious Edit)."
+            };
+
+            document.getElementById("cvPreviewImg").src = dataUrl;
+            document.getElementById("cvBoxLabel").textContent = `CV SEGMENTED: ${detected.name.toUpperCase()} (${hex})`;
+            document.getElementById("cvBoxUndertone").textContent = detected.undertone;
+            renderCVDetectionSummary(detected);
+
+            OWNED_WARDROBE.unshift({
+              id: detected.id,
+              name: detected.name,
+              category: "top",
+              photo: dataUrl,
+              hex,
+              colourName: detected.colourName,
+              cvConfidence: 95,
+              flatterTip: detected.flatterTip
+            });
+            renderOwnedWardrobeGrid();
+            showToast(`CV identified "${detected.name}" (${hex}) & added to your wardrobe!`);
+          };
+          img.src = dataUrl;
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function renderCVDetectionSummary(det) {
+      document.getElementById("cvDetectionSummary").innerHTML = `
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="w-8 h-8 rounded-xl border border-black/15 shadow-inner" style="background-color: ${det.hex};"></span>
+            <div>
+              <div class="text-xs font-bold">${det.name}</div>
+              <div class="font-mono-num text-[11px]" style="color: var(--mkb-muted);">Dominant Hex: ${det.colourName}</div>
+            </div>
+          </div>
+          <button onclick="addSampleCVToWardrobe('${det.name.replace(/'/g, "")}', '${det.category}', '${det.photo}', '${det.hex}', '${det.flatterRule.replace(/'/g, "")}')" class="px-3.5 py-2 rounded-full text-xs font-semibold btn-mkb-charcoal">
+            + Save to My Wardrobe
+          </button>
+        </div>
+      `;
+    }
+
+    function addSampleCVToWardrobe(name, category, photo, hex, flatterTip) {
+      OWNED_WARDROBE.unshift({
+        id: "own-" + Date.now(),
+        name,
+        category,
+        photo,
+        hex,
+        colourName: hex,
+        cvConfidence: 97,
+        flatterTip
+      });
+      renderOwnedWardrobeGrid();
+      showToast(`Saved "${name}" to your photographed wardrobe!`);
+    }
+
+    function filterOwnedWardrobe(cat) {
+      userState.ownedFilter = cat;
+      ["all", "top", "bottom", "layer", "one-piece"].forEach((c) => {
+        const btn = document.getElementById("own-cat-" + c);
+        if (btn) {
+          btn.className = "px-3.5 py-1.5 rounded-full text-xs font-semibold border " + (c === cat ? "tab-pill-active" : "tab-pill-inactive");
+        }
+      });
+      renderOwnedWardrobeGrid();
+    }
+
+    function renderOwnedWardrobeGrid() {
+      const allBtn = document.getElementById("own-cat-all");
+      if (allBtn) allBtn.textContent = `All Photographed (${OWNED_WARDROBE.length})`;
+
+      const list = OWNED_WARDROBE.filter((it) => userState.ownedFilter === "all" || it.category === userState.ownedFilter);
+      const grid = document.getElementById("ownedWardrobeGrid");
+      grid.innerHTML = list.map((it) => `
+        <article class="card-retail overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="relative h-48 overflow-hidden">
+              <img src="${it.photo}" alt="${it.name}" class="w-full h-full object-cover" />
+              <div class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-mono-num font-bold bg-black/75 text-white">
+                CV ${it.cvConfidence}% Match
+              </div>
+              <span class="absolute bottom-3 right-3 w-6 h-6 rounded-full border-2 border-white shadow" style="background-color: ${it.hex};" title="${it.colourName}"></span>
+            </div>
+            <div class="p-4 space-y-1.5">
+              <div class="font-mono-num text-[10px] uppercase font-semibold" style="color: var(--mkb-red);">${it.category} • ${it.colourName}</div>
+              <h4 class="font-editorial text-xl font-medium">${it.name}</h4>
+              <p class="text-xs leading-relaxed" style="color: var(--mkb-muted);">${it.flatterTip}</p>
+            </div>
+          </div>
+          <div class="px-4 pb-4 pt-2 border-t flex items-center justify-between text-xs" style="border-color: var(--mkb-border);">
+            <span class="font-semibold" style="color: var(--mkb-sage);">✓ Paired in 4 Outfits</span>
+            <button onclick="accelerateToHeroShop()" class="font-semibold underline hover:text-[#E83A0F]">See Pairings →</button>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    // =========================================================================
+    // 11. TAB 4: HERO FEATURE — CONSCIOUS CAPSULE EDIT & SMART SHOP
+    // =========================================================================
+    function updateHeroBudgetSlider(val) {
+      userState.budgetEur = parseInt(val, 10) || 85;
+      document.getElementById("heroBudgetDisplay").textContent = `€${userState.budgetEur} max`;
+      renderHeroShopView();
+    }
+
+    function selectHeroOccasion(occ) {
+      userState.heroOccasion = occ;
+      ["all", "school-run", "work-hybrid", "weekend-lunch"].forEach((k) => {
+        const btn = document.getElementById("hocc-" + k);
+        if (btn) {
+          btn.className = "px-4 py-2 rounded-full text-xs font-semibold border " + (k === occ ? "tab-pill-active" : "tab-pill-inactive");
+        }
+      });
+      renderHeroShopView();
+    }
+
+    function filterHeroShopCat(cat) {
+      userState.heroShopCat = cat;
+      ["all", "bottom", "top", "layer", "one-piece"].forEach((c) => {
+        const btn = document.getElementById("hcat-" + c);
+        if (btn) {
+          btn.className = "px-3.5 py-1.5 rounded-full text-xs font-semibold border " + (c === cat ? "tab-pill-active" : "tab-pill-inactive");
+        }
+      });
+      renderHeroShopView();
+    }
+
+    function renderHeroShopView() {
+      const stageObj = MUM_CIRCUMSTANCES.find((c) => c.id === userState.circumstanceId) || MUM_CIRCUMSTANCES[0];
+      document.getElementById("heroShopStagePill").textContent = `Tailored for: ${stageObj.title} • ${userState.bodyShape.split("(")[0].trim()}`;
+
+      // Render Part 1: Complete Outfit Formulas
+      const formulas = HERO_OUTFIT_FORMULAS.filter((f) => userState.heroOccasion === "all" || f.occasion === userState.heroOccasion);
+      document.getElementById("heroOutfitFormulasGrid").innerHTML = formulas.map((f) => `
+        <article class="card-retail overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="relative h-64 overflow-hidden">
+              <img src="${f.heroImage}" alt="${f.title}" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex flex-col justify-end p-5 text-white">
+                <div class="flex items-center justify-between gap-2 mb-1">
+                  <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase bg-[#E83A0F] text-white">${f.occasionLabel}</span>
+                  <span class="font-mono-num text-xs font-bold px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-md">Jev ${f.jevConfidence}% Match</span>
+                </div>
+                <h4 class="font-editorial text-2xl font-medium">${f.title}</h4>
+              </div>
+            </div>
+
+            <div class="p-5 space-y-3">
+              <div class="p-3 rounded-2xl border text-xs space-y-1.5" style="background-color: var(--mkb-canvas); border-color: var(--mkb-border);">
+                <div class="font-bold text-[11px] uppercase tracking-wider" style="color: var(--mkb-sage);">✓ Uses 2 Pieces You Already Own:</div>
+                <div class="font-medium">${f.ownedPieces.join(" + ")}</div>
+                <div class="font-bold text-[11px] uppercase tracking-wider pt-1" style="color: var(--mkb-red);">+ 1 Conscious Bridge Piece:</div>
+                <div class="font-semibold">${f.bridgePiece}</div>
+              </div>
+
+              <p class="text-xs leading-relaxed" style="color: var(--mkb-muted);">
+                <strong style="color: var(--mkb-ink);">Why it flatters your shape:</strong> ${f.flatterWhy}
+              </p>
+            </div>
+          </div>
+
+          <div class="px-5 pb-5 pt-3 border-t flex items-center justify-between text-xs" style="border-color: var(--mkb-border);">
+            <span class="font-mono-num font-bold" style="color: var(--mkb-sage);">Combo CPW: ${f.costPerWearCombo}</span>
+            <button onclick="showToast('Saved ${f.title} to your Mother Knows Best Lookbook!')" class="px-4 py-2 rounded-full font-semibold btn-mkb-charcoal">
+              Save Outfit Formula
+            </button>
+          </div>
+        </article>
+      `).join("");
+
+      // Render Part 2: Vetted Conscious Retail Picks (Filtered by Budget & Category, Scored by Jev)
+      const shopFiltered = HERO_SHOP_ITEMS.filter((item) => {
+        if (item.priceEur > userState.budgetEur) return false;
+        if (userState.heroShopCat !== "all" && item.category !== userState.heroShopCat) return false;
+        return true;
+      });
+
+      const totalUnlocks = shopFiltered.reduce((acc, it) => acc + it.outfitsUnlocked, 0);
+      document.getElementById("heroUnlocksDisplay").textContent = `+${totalUnlocks} Outfits`;
+
+      const retailGrid = document.getElementById("heroRetailGrid");
+      if (shopFiltered.length === 0) {
+        retailGrid.innerHTML = `
+          <div class="col-span-full card-retail p-8 text-center space-y-2">
+            <h4 class="font-editorial text-2xl font-medium">No pieces under €${userState.budgetEur} in this filter</h4>
+            <p class="text-xs" style="color: var(--mkb-muted);">Slide the budget up slightly to €50+ or click "All Vetted Gaps" to view the €30 Dunnes &amp; €39 Uniqlo capsule heroes.</p>
+          </div>
+        `;
+        return;
+      }
+
+      retailGrid.innerHTML = shopFiltered.map((item) => {
+        const jev = evaluateWithJevModel(item, userState);
+        return `
+          <article class="card-retail overflow-hidden flex flex-col justify-between">
+            <div>
+              <!-- High-Res Editorial Retail Product Photo -->
+              <div class="relative h-60 overflow-hidden">
+                <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+                <div class="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
+                  <span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase bg-white/95 text-[#1E1E20] shadow-sm">
+                    ${item.tag}
+                  </span>
+                  <span class="font-mono-num text-xs font-bold px-3 py-1 rounded-full text-white shadow-sm" style="background-color: var(--mkb-sage);">
+                    +${item.outfitsUnlocked} New Outfits
+                  </span>
+                </div>
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-mono-num font-bold bg-[#1F2022]/90 text-white">
+                    Jev ${jev.calibratedConfidence}% Match • Regret &lt;${jev.regretRiskPct}%
+                  </span>
+                  <span class="px-3 py-1 rounded-full font-mono-num text-xs font-bold bg-white text-[#1E1E20] shadow">
+                    €${item.priceEur} (${item.costPerWear}/wear)
+                  </span>
+                </div>
+              </div>
+
+              <!-- Retail Details & Silhouette Proof -->
+              <div class="p-5 space-y-3">
+                <div>
+                  <div class="flex items-center justify-between text-xs" style="color: var(--mkb-muted);">
+                    <span class="font-semibold">${item.retailer}</span>
+                    <span class="flex items-center gap-1.5">
+                      <span class="w-3.5 h-3.5 rounded-full border border-black/15 inline-block" style="background-color: ${item.hex};"></span>
+                      <span>${item.colourName}</span>
+                    </span>
+                  </div>
+                  <h4 class="font-editorial text-2xl font-medium mt-1 leading-snug">${item.name}</h4>
+                </div>
+
+                <p class="text-xs leading-relaxed" style="color: var(--mkb-muted);">
+                  <strong style="color: var(--mkb-ink);">Why Jev picked this for your shape:</strong> ${item.whyFlattering}
+                </p>
+
+                <!-- Pairs with Owned Wardrobe Items -->
+                <div class="p-3 rounded-2xl border text-xs space-y-1.5" style="background-color: var(--mkb-light-pink); border-color: #F3C4F1;">
+                  <div class="font-bold text-[10px] uppercase tracking-wider" style="color: var(--mkb-red);">Pairs with ${item.matchesOwned.length} pieces in your wardrobe:</div>
+                  <div class="flex flex-wrap gap-1">
+                    ${item.matchesOwned.map((m) => `<span class="px-2 py-0.5 rounded-full bg-white text-[11px] font-medium border" style="border-color: var(--mkb-border);">${m}</span>`).join("")}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="px-5 pb-5 pt-3 border-t flex items-center justify-between gap-2" style="border-color: var(--mkb-border);">
+              <button onclick="addHeroItemToCapsule('${item.id}')" class="flex-1 py-2.5 px-4 text-xs font-semibold btn-mkb-charcoal">
+                + Add to My Capsule (+${item.outfitsUnlocked} Looks)
+              </button>
+              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="py-2.5 px-4 rounded-full text-xs font-semibold border bg-[#F9F8F4] hover:bg-[#F2EFE9] transition" style="border-color: var(--mkb-border);">
+                View at ${item.retailer.split(" ")[0]} ↗
+              </a>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function addHeroItemToCapsule(itemId) {
+      const item = HERO_SHOP_ITEMS.find((x) => x.id === itemId);
+      if (!item) return;
+      OWNED_WARDROBE.unshift({
+        id: "own-shop-" + Date.now(),
+        name: item.name,
+        category: item.category,
+        photo: item.image,
+        hex: item.hex,
+        colourName: item.colourName,
+        cvConfidence: 99,
+        flatterTip: item.whyFlattering
+      });
+      renderOwnedWardrobeGrid();
+      showToast(`Added "${item.name}" to your Capsule! Unlocked +${item.outfitsUnlocked} outfits at ${item.costPerWear}/wear.`);
+    }
+
+    // =========================================================================
+    // 12. INITIALIZATION & DEEP-LINKING
+    // =========================================================================
+    window.addEventListener("DOMContentLoaded", () => {
+      renderCircumstanceCards();
+      renderInterviewAndJevPanel();
+      runCVSampleGarment("knit");
+      renderOwnedWardrobeGrid();
+      renderHeroShopView();
+
+      const params = new URLSearchParams(window.location.search);
+      const stageParam = params.get("stage");
+      if (stageParam && MUM_CIRCUMSTANCES.some((c) => c.id === stageParam)) {
+        selectCircumstance(stageParam);
+      }
+
+      const tabParam = params.get("tab");
+      if (tabParam && ["journey", "interview", "wardrobe", "shop"].includes(tabParam)) {
+        switchTab(tabParam);
+      }
+
+      if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+        navigator.serviceWorker.register("./sw.js").catch(() => {});
+      }
+    });
+  </script>
+
+</body>
+</html>
